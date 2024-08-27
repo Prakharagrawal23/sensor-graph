@@ -10,10 +10,4 @@ This React dashboard application provides an interactive interface with a sideba
 - **Interactive Charts**: Visualize sensor data with line graphs for internet speed, motion, and latency.
 - **Modern Design**: Dark-themed UI with CSS animations and responsive layout.
 
-## Installation
 
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/dashboard-app.git
-   cd dashboard-app
