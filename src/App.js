@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import DashboardHeader from './components/DashboardHeader';
+import SensorGraph from './components/SensorGraph';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div className="container">
+            <Sidebar />
+            <main className="main-content">
+                <DashboardHeader />
+                <div className="sensor-graphs">
+                    <SensorGraph sensorType="internet" />
+                    <SensorGraph sensorType="motion" />
+                    <SensorGraph sensorType="latency" />
+                </div>
+            </main>
+        </div>
+    );
+};
 
 export default App;
